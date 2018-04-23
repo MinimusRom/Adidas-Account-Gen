@@ -12,7 +12,7 @@ class adidas():
         self.faker = Faker()
         self.catchall = True
         self.randompass = True
-        self.domain = "sneakersource.me"
+        self.domain = "euph.com"
         self.dob = str(random.randint(1970, 1996)) + "-" + str(random.randint(10, 12)) + "-" + str(random.randint(10, 30))
         self.s = requests.session()
         self.s.proxies.update({'http': 'http://blue:abc123@us.netnut.io:33128', 'https': 'https://blue:abc123@uk-S1.netnut.io:33128'})
@@ -24,7 +24,7 @@ class adidas():
         if self.randompass is True:
             password = fname + lname + str(random.randint(10000, 99999))
         else:
-            password = "Rahat123"
+            password = "Abc12345"
         if self.catchall is True:
             email = fname + lname + str(random.randint(10000, 99999)) + "@" + self.domain
             
